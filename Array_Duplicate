@@ -1,0 +1,9 @@
+class Solution(object):
+    def containsDuplicate(self, nums):
+        checked=[]
+        for num in nums:
+            if num in checked:
+                return True
+            checked.append(num)
+        return False
+        
