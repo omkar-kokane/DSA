@@ -6,4 +6,19 @@ class Solution(object):
                 return True
             checked.append(num)
         return False
+
+
+--------------------------------------------------------------------
+
+
+class Solution(object):
+    def containsDuplicate(self, nums):
+        seen = set()  # Set to track elements
+        
+        for num in nums:
+            if num in seen: 
+                return True
+            seen.add(num) 
+        
+        return False
         
